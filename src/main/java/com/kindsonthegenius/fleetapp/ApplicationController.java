@@ -25,4 +25,9 @@ public class ApplicationController {
 	public String register() {
 		return "register";
 	}
+	
+	@GetMapping("/accessdenied")
+	public String accessdenied() {
+		return "accessdenied";
+	}
 }

@@ -415,9 +415,15 @@
                   <p>@jenifersmith</p>
                   <p><i class="fa fa-twitter">jenifertweet</i></p>
                   <h6>
-                                    <span><i class="icon_clock_alt"></i>11:05 AM</span>
-                                    <span><i class="icon_calendar"></i>25.10.13</span>
-                                    <span><i class="icon_pin_alt"></i>NY</span>
+                                    <span><i class="icon_clock_alt"></i>
+                                    <span th:text="${#dates.format(#dates.createNow(), 'hh:mm a')}"></span>
+                                    </span>
+                                    <span><i class="icon_calendar"></i>
+                                    <span th:text="${#dates.format(#dates.createNow(), 'dd MMM yyyy')}"></span>
+                                    </span>
+                                    <span><i class="icon_pin_alt"></i>
+                                    NY
+                                    </span>
                                 </h6>
                 </div>
                 <div class="col-lg-2 col-sm-6 follow-info weather-category">
